@@ -7,21 +7,37 @@
 //
 
 import Cocoa
+import Foundation
 
 class myVC: NSViewController {
-    @IBOutlet var mySButton : NSButton
-    @IBOutlet var mySTextField : NSTextField
+
     
+    var fileContents: String = ""
+
+    @IBOutlet var mySButton : NSButton?
+    @IBOutlet var mySTextView: NSTextView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
     }
     
     @IBAction func mySBClicked(sender : AnyObject) {
         NSLog("click!")
-        mySTextField.stringValue = "Hello world "
+        let file="httpd-vhosts.conf"
+        let dir = "/etc/apache2/extra/"
+        let path = dir.stringByAppendingPathComponent(file)
+        
+        let text2 = String.stringWithContentsOfFile(path, encoding: NSUTF8StringEncoding, error: nil)
+        fileContents = text2!
+        NSLog(fileContents)
+        
+        mySTextView?.insertText(fileContents)
         var currentAge = myAge()
-        mySTextField.stringValue = mySTextField.stringValue + currentAge.age.description
+        var vhConfigFile = ConfigFile()
+        //mySTextView.insertText(mySTextView.string + "\nMy age")
+        //mySTextField.stringValue = mySTextField.stringValue + "\nfile = " + self.fileContents
     }
     
 }

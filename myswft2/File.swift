@@ -7,11 +7,19 @@
 //
 
 import Foundation
+import Cocoa
 
 class myAge {
-    var age: NSInteger {
-        get {
-            return 54
-        }
+    var age : Int = 54
+}
+
+class ConfigFile {
+    
+
+    func getConfigFile() {
+        
+        var text: String? = String.stringWithContentsOfFile("/etc/apache2/extra/httpd-vhosts.conf", encoding: NSUTF8StringEncoding, error: nil)
+
     }
+    
 }
