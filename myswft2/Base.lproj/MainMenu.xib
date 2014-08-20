@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6205"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6206.8"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -675,7 +675,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button identifier="myButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-In-5bu">
+                    <button identifier="myButton" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-In-5bu">
                         <rect key="frame" x="14" y="312" width="82" height="32"/>
                         <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nPb-Kt-etP">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -685,7 +685,7 @@
                             <action selector="mySBClicked:" target="BRj-19-5uZ" id="hW1-YT-6t6"/>
                         </connections>
                     </button>
-                    <scrollView fixedFrame="YES" placeholderIntrinsicWidth="440" placeholderIntrinsicHeight="279" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssU-OW-Rbo">
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="allowed" verticalScrollElasticity="allowed" translatesAutoresizingMaskIntoConstraints="NO" id="ssU-OW-Rbo">
                         <rect key="frame" x="20" y="20" width="440" height="279"/>
                         <clipView key="contentView" id="tNH-T9-X4X">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
@@ -714,6 +714,14 @@
                         </scroller>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ssU-OW-Rbo" secondAttribute="trailing" constant="20" symbolic="YES" id="NI8-Zg-tvi"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="ssU-OW-Rbo" secondAttribute="leading" id="SU3-7i-ahq"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="WOT-ZX-uBA"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="a7C-tv-az4"/>
+                    <constraint firstItem="ssU-OW-Rbo" firstAttribute="top" secondItem="v4R-In-5bu" secondAttribute="bottom" constant="20" symbolic="YES" id="nke-pz-b3o"/>
+                    <constraint firstAttribute="bottom" secondItem="ssU-OW-Rbo" secondAttribute="bottom" constant="20" symbolic="YES" id="xZR-9q-C34"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="21" y="207"/>
         </window>

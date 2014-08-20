@@ -36,8 +36,7 @@ class myVC: NSViewController {
         mySTextView?.insertText(fileContents)
         var currentAge = myAge()
         var vhConfigFile = ConfigFile()
-        //mySTextView.insertText(mySTextView.string + "\nMy age")
-        //mySTextField.stringValue = mySTextField.stringValue + "\nfile = " + self.fileContents
+        mySTextView?.insertText("My age = " + String(currentAge.age))
     }
     
 }

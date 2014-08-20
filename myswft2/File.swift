@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class myAge {
-    var age : Int = 54
+    var age = 54
 }
 
 class ConfigFile {
