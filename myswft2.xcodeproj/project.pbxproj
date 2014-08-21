@@ -13,7 +13,6 @@
 		72A9F7751976C93000316121 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A9F7731976C93000316121 /* MainMenu.xib */; };
 		72A9F7811976C93000316121 /* myswft2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F7801976C93000316121 /* myswft2Tests.swift */; };
 		72A9F78B1976CA4900316121 /* myVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F78A1976CA4900316121 /* myVC.swift */; };
-		72A9F78D1976CD9200316121 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F78C1976CD9200316121 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		72A9F77F1976C93000316121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A9F7801976C93000316121 /* myswft2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myswft2Tests.swift; sourceTree = "<group>"; };
 		72A9F78A1976CA4900316121 /* myVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myVC.swift; sourceTree = "<group>"; };
-		72A9F78C1976CD9200316121 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 				72A9F76F1976C92F00316121 /* AppDelegate.swift */,
 				72A9F7711976C92F00316121 /* Images.xcassets */,
 				72A9F7731976C93000316121 /* MainMenu.xib */,
-				72A9F78C1976CD9200316121 /* File.swift */,
 				72A9F78A1976CA4900316121 /* myVC.swift */,
 				72A9F76B1976C92F00316121 /* Supporting Files */,
 			);
@@ -215,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A9F7701976C92F00316121 /* AppDelegate.swift in Sources */,
-				72A9F78D1976CD9200316121 /* File.swift in Sources */,
 				72A9F78B1976CA4900316121 /* myVC.swift in Sources */,
 				72A9F76E1976C92F00316121 /* main.swift in Sources */,
 			);
@@ -405,6 +401,7 @@
 				72A9F7861976C93000316121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72A9F7871976C93000316121 /* Build configuration list for PBXNativeTarget "myswft2Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +410,7 @@
 				72A9F7891976C93000316121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

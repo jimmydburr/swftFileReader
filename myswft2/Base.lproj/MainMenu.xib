@@ -669,15 +669,18 @@
         <window title="myswft2" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="520" height="393"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="520" height="393"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button identifier="myButton" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-In-5bu">
-                        <rect key="frame" x="14" y="312" width="82" height="32"/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nPb-Kt-etP">
+                        <rect key="frame" x="14" y="345" width="122" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="OsH-ag-7nq"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Select File" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nPb-Kt-etP">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -686,7 +689,7 @@
                         </connections>
                     </button>
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="allowed" verticalScrollElasticity="allowed" translatesAutoresizingMaskIntoConstraints="NO" id="ssU-OW-Rbo">
-                        <rect key="frame" x="20" y="20" width="440" height="279"/>
+                        <rect key="frame" x="20" y="20" width="480" height="312"/>
                         <clipView key="contentView" id="tNH-T9-X4X">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -695,11 +698,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="277"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="423" height="277"/>
-                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <size key="minSize" width="463" height="310"/>
+                                    <size key="maxSize" width="510" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="423" height="277"/>
-                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <size key="minSize" width="463" height="310"/>
+                                    <size key="maxSize" width="510" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -714,7 +717,7 @@
                         </scroller>
                     </scrollView>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MEf-oj-tZX">
-                        <rect key="frame" x="98" y="319" width="362" height="22"/>
+                        <rect key="frame" x="138" y="351" width="362" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Cry-Gl-nIx">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -723,18 +726,18 @@
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="MEf-oj-tZX" firstAttribute="trailing" secondItem="ssU-OW-Rbo" secondAttribute="trailing" id="D7I-Zc-v2n"/>
-                    <constraint firstAttribute="trailing" secondItem="ssU-OW-Rbo" secondAttribute="trailing" constant="20" symbolic="YES" id="NI8-Zg-tvi"/>
-                    <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="ssU-OW-Rbo" secondAttribute="leading" id="SU3-7i-ahq"/>
-                    <constraint firstItem="v4R-In-5bu" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="WOT-ZX-uBA"/>
-                    <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="a7C-tv-az4"/>
-                    <constraint firstItem="MEf-oj-tZX" firstAttribute="bottom" secondItem="v4R-In-5bu" secondAttribute="bottom" id="cLh-6E-tTN"/>
-                    <constraint firstItem="ssU-OW-Rbo" firstAttribute="top" secondItem="v4R-In-5bu" secondAttribute="bottom" constant="20" symbolic="YES" id="nke-pz-b3o"/>
-                    <constraint firstItem="MEf-oj-tZX" firstAttribute="leading" secondItem="v4R-In-5bu" secondAttribute="trailing" constant="8" symbolic="YES" id="u2Q-K0-sJD"/>
-                    <constraint firstAttribute="bottom" secondItem="ssU-OW-Rbo" secondAttribute="bottom" constant="20" symbolic="YES" id="xZR-9q-C34"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="5yI-6D-cFK"/>
+                    <constraint firstItem="ssU-OW-Rbo" firstAttribute="trailing" secondItem="MEf-oj-tZX" secondAttribute="trailing" id="G4j-dN-afR"/>
+                    <constraint firstAttribute="bottom" secondItem="ssU-OW-Rbo" secondAttribute="bottom" constant="20" symbolic="YES" id="QXm-Fi-rSA"/>
+                    <constraint firstItem="MEf-oj-tZX" firstAttribute="leading" secondItem="v4R-In-5bu" secondAttribute="trailing" constant="8" symbolic="YES" id="QgX-EN-6BQ"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="ssU-OW-Rbo" secondAttribute="leading" id="aPd-N6-wEr"/>
+                    <constraint firstAttribute="trailing" secondItem="MEf-oj-tZX" secondAttribute="trailing" constant="20" symbolic="YES" id="pFW-Z4-Nwo"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="vq3-vb-hCE"/>
+                    <constraint firstItem="ssU-OW-Rbo" firstAttribute="top" secondItem="v4R-In-5bu" secondAttribute="bottom" constant="20" symbolic="YES" id="wSf-Xj-5mr"/>
+                    <constraint firstItem="v4R-In-5bu" firstAttribute="top" secondItem="MEf-oj-tZX" secondAttribute="top" id="z3k-8e-hxE"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="21" y="207"/>
+            <point key="canvasLocation" x="41" y="223.5"/>
         </window>
         <viewController id="BRj-19-5uZ" customClass="myVC" customModule="myswft2" customModuleProvider="target">
             <connections>
