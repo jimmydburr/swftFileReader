@@ -23,8 +23,8 @@ class myVC: NSViewController {
         
     }
     
-    @IBAction func mySBClicked(sender : AnyObject) {
-        NSLog("click!")
+    func displayFile(path: String) {
+        // NSLog("click!")
         let file="httpd-vhosts.conf"
         let dir = "/etc/apache2/extra/"
         let path = dir.stringByAppendingPathComponent(file)
@@ -37,6 +37,38 @@ class myVC: NSViewController {
         var currentAge = myAge()
         var vhConfigFile = ConfigFile()
         mySTextView?.insertText("My age = " + String(currentAge.age))
+    }
+    
+    @IBAction func mySBClicked(sender : AnyObject) {
+        
+        // Create the File Open Dialog class.
+        let openDlg: NSOpenPanel = NSOpenPanel()
+        
+        // Enable the selection of files in the dialog.
+        //[openDlg setCanChooseFiles:YES];
+        openDlg.canChooseFiles = true
+        
+        // Multiple files not allowed
+        //[openDlg setAllowsMultipleSelection:NO];
+        openDlg.allowsMultipleSelection = false
+        
+        // Can't select a directory
+        //[openDlg setCanChooseDirectories:NO];
+        openDlg.canChooseDirectories = false
+        
+        // Display the dialog. If the OK button was pressed,
+        // process the files.
+        if ( openDlg.runModal() == NSOKButton )
+        {
+            // Get an array containing the full filenames of all
+            // files and directories selected.
+            //NSArray* urls = [openDlg URLs];
+            let urls: Array = openDlg.URLs
+            
+            var url: String = urls[0].absoluteString!!
+            NSLog(url);
+        }
+        
     }
     
 }
