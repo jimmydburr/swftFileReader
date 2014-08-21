@@ -12,10 +12,11 @@ import Foundation
 class myVC: NSViewController {
 
     
-    var fileContents: String = ""
+//    var fileContents: String = ""
 
     @IBOutlet var mySButton : NSButton?
     @IBOutlet var mySTextView: NSTextView?
+    @IBOutlet weak var fileToReadTextField: NSTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,22 +25,22 @@ class myVC: NSViewController {
     }
     
     func displayFile(path: String) {
-        // NSLog("click!")
-        let file="httpd-vhosts.conf"
-        let dir = "/etc/apache2/extra/"
-        let path = dir.stringByAppendingPathComponent(file)
-        
+        // read the file at path
         let text2 = String.stringWithContentsOfFile(path, encoding: NSUTF8StringEncoding, error: nil)
-        fileContents = text2!
-        NSLog(fileContents)
-        
-        mySTextView?.insertText(fileContents)
-        var currentAge = myAge()
-        var vhConfigFile = ConfigFile()
-        mySTextView?.insertText("My age = " + String(currentAge.age))
+        // display it in the text view
+        mySTextView?.insertText(text2!)
     }
     
     @IBAction func mySBClicked(sender : AnyObject) {
+        // get the file to be read
+        fileToReadTextField.stringValue = getFileToRead()
+        // read it and display
+        displayFile(fileToReadTextField.stringValue!)
+    }
+    
+    func getFileToRead() -> String {
+        
+        var url: String = ""
         
         // Create the File Open Dialog class.
         let openDlg: NSOpenPanel = NSOpenPanel()
@@ -60,15 +61,12 @@ class myVC: NSViewController {
         // process the files.
         if ( openDlg.runModal() == NSOKButton )
         {
-            // Get an array containing the full filenames of all
-            // files and directories selected.
-            //NSArray* urls = [openDlg URLs];
             let urls: Array = openDlg.URLs
-            
-            var url: String = urls[0].absoluteString!!
-            NSLog(url);
+            url = urls[0].path!!
+//            NSLog(url);
         }
-        
+        // stick results in the fileToReadTextField
+        return url
     }
     
 }

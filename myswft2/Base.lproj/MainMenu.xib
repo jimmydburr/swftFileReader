@@ -713,7 +713,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
-                    <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEf-oj-tZX">
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MEf-oj-tZX">
                         <rect key="frame" x="98" y="319" width="362" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Cry-Gl-nIx">
                             <font key="font" metaFont="system"/>
@@ -723,13 +723,14 @@
                     </textField>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="MEf-oj-tZX" firstAttribute="trailing" secondItem="ssU-OW-Rbo" secondAttribute="trailing" id="D7I-Zc-v2n"/>
                     <constraint firstAttribute="trailing" secondItem="ssU-OW-Rbo" secondAttribute="trailing" constant="20" symbolic="YES" id="NI8-Zg-tvi"/>
                     <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="ssU-OW-Rbo" secondAttribute="leading" id="SU3-7i-ahq"/>
                     <constraint firstItem="v4R-In-5bu" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="WOT-ZX-uBA"/>
                     <constraint firstItem="v4R-In-5bu" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="a7C-tv-az4"/>
-                    <constraint firstAttribute="trailing" secondItem="MEf-oj-tZX" secondAttribute="trailing" constant="20" id="nCH-ql-dIN"/>
+                    <constraint firstItem="MEf-oj-tZX" firstAttribute="bottom" secondItem="v4R-In-5bu" secondAttribute="bottom" id="cLh-6E-tTN"/>
                     <constraint firstItem="ssU-OW-Rbo" firstAttribute="top" secondItem="v4R-In-5bu" secondAttribute="bottom" constant="20" symbolic="YES" id="nke-pz-b3o"/>
-                    <constraint firstItem="MEf-oj-tZX" firstAttribute="leading" secondItem="v4R-In-5bu" secondAttribute="trailing" constant="8" id="tZp-0O-9OG"/>
+                    <constraint firstItem="MEf-oj-tZX" firstAttribute="leading" secondItem="v4R-In-5bu" secondAttribute="trailing" constant="8" symbolic="YES" id="u2Q-K0-sJD"/>
                     <constraint firstAttribute="bottom" secondItem="ssU-OW-Rbo" secondAttribute="bottom" constant="20" symbolic="YES" id="xZR-9q-C34"/>
                 </constraints>
             </view>
@@ -737,6 +738,7 @@
         </window>
         <viewController id="BRj-19-5uZ" customClass="myVC" customModule="myswft2" customModuleProvider="target">
             <connections>
+                <outlet property="fileToReadTextField" destination="MEf-oj-tZX" id="R9I-75-OX2"/>
                 <outlet property="mySTextView" destination="A88-Wo-uaX" id="NoF-q7-ikp"/>
                 <outlet property="view" destination="EiT-Mj-1SZ" id="ynK-m2-FLt"/>
             </connections>
