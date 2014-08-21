@@ -46,26 +46,21 @@ class myVC: NSViewController {
         let openDlg: NSOpenPanel = NSOpenPanel()
         
         // Enable the selection of files in the dialog.
-        //[openDlg setCanChooseFiles:YES];
         openDlg.canChooseFiles = true
         
         // Multiple files not allowed
-        //[openDlg setAllowsMultipleSelection:NO];
         openDlg.allowsMultipleSelection = false
         
         // Can't select a directory
-        //[openDlg setCanChooseDirectories:NO];
         openDlg.canChooseDirectories = false
         
-        // Display the dialog. If the OK button was pressed,
-        // process the files.
+        // Display the dialog. If the OK button was pressed, process the files.
         if ( openDlg.runModal() == NSOKButton )
         {
             let urls: Array = openDlg.URLs
             url = urls[0].path!!
-//            NSLog(url);
+            // NSLog(url);
         }
-        // stick results in the fileToReadTextField
         return url
     }
     
