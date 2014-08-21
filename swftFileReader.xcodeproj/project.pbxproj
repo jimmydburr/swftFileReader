@@ -11,7 +11,7 @@
 		72A9F7701976C92F00316121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F76F1976C92F00316121 /* AppDelegate.swift */; };
 		72A9F7721976C92F00316121 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A9F7711976C92F00316121 /* Images.xcassets */; };
 		72A9F7751976C93000316121 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A9F7731976C93000316121 /* MainMenu.xib */; };
-		72A9F7811976C93000316121 /* myswft2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F7801976C93000316121 /* myswft2Tests.swift */; };
+		72A9F7811976C93000316121 /* swftFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F7801976C93000316121 /* swftFileReaderTests.swift */; };
 		72A9F78B1976CA4900316121 /* myVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9F78A1976CA4900316121 /* myVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,15 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		72A9F7681976C92F00316121 /* myswft2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myswft2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A9F7681976C92F00316121 /* swftFileReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swftFileReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A9F76C1976C92F00316121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A9F76D1976C92F00316121 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		72A9F76F1976C92F00316121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A9F7711976C92F00316121 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72A9F7741976C93000316121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		72A9F77A1976C93000316121 /* myswft2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myswft2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A9F77A1976C93000316121 /* swftFileReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swftFileReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A9F77F1976C93000316121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72A9F7801976C93000316121 /* myswft2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myswft2Tests.swift; sourceTree = "<group>"; };
+		72A9F7801976C93000316121 /* swftFileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swftFileReaderTests.swift; sourceTree = "<group>"; };
 		72A9F78A1976CA4900316121 /* myVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,8 +59,8 @@
 		72A9F75F1976C92F00316121 = {
 			isa = PBXGroup;
 			children = (
-				72A9F76A1976C92F00316121 /* myswft2 */,
-				72A9F77D1976C93000316121 /* myswft2Tests */,
+				72A9F76A1976C92F00316121 /* swftFileReader */,
+				72A9F77D1976C93000316121 /* swftFileReaderTests */,
 				72A9F7691976C92F00316121 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +68,13 @@
 		72A9F7691976C92F00316121 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72A9F7681976C92F00316121 /* myswft2.app */,
-				72A9F77A1976C93000316121 /* myswft2Tests.xctest */,
+				72A9F7681976C92F00316121 /* swftFileReader.app */,
+				72A9F77A1976C93000316121 /* swftFileReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72A9F76A1976C92F00316121 /* myswft2 */ = {
+		72A9F76A1976C92F00316121 /* swftFileReader */ = {
 			isa = PBXGroup;
 			children = (
 				72A9F76F1976C92F00316121 /* AppDelegate.swift */,
@@ -83,6 +83,7 @@
 				72A9F78A1976CA4900316121 /* myVC.swift */,
 				72A9F76B1976C92F00316121 /* Supporting Files */,
 			);
+			name = swftFileReader;
 			path = myswft2;
 			sourceTree = "<group>";
 		};
@@ -95,12 +96,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		72A9F77D1976C93000316121 /* myswft2Tests */ = {
+		72A9F77D1976C93000316121 /* swftFileReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				72A9F7801976C93000316121 /* myswft2Tests.swift */,
+				72A9F7801976C93000316121 /* swftFileReaderTests.swift */,
 				72A9F77E1976C93000316121 /* Supporting Files */,
 			);
+			name = swftFileReaderTests;
 			path = myswft2Tests;
 			sourceTree = "<group>";
 		};
@@ -115,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		72A9F7671976C92F00316121 /* myswft2 */ = {
+		72A9F7671976C92F00316121 /* swftFileReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72A9F7841976C93000316121 /* Build configuration list for PBXNativeTarget "myswft2" */;
+			buildConfigurationList = 72A9F7841976C93000316121 /* Build configuration list for PBXNativeTarget "swftFileReader" */;
 			buildPhases = (
 				72A9F7641976C92F00316121 /* Sources */,
 				72A9F7651976C92F00316121 /* Frameworks */,
@@ -127,14 +129,14 @@
 			);
 			dependencies = (
 			);
-			name = myswft2;
+			name = swftFileReader;
 			productName = myswft2;
-			productReference = 72A9F7681976C92F00316121 /* myswft2.app */;
+			productReference = 72A9F7681976C92F00316121 /* swftFileReader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		72A9F7791976C93000316121 /* myswft2Tests */ = {
+		72A9F7791976C93000316121 /* swftFileReaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72A9F7871976C93000316121 /* Build configuration list for PBXNativeTarget "myswft2Tests" */;
+			buildConfigurationList = 72A9F7871976C93000316121 /* Build configuration list for PBXNativeTarget "swftFileReaderTests" */;
 			buildPhases = (
 				72A9F7761976C93000316121 /* Sources */,
 				72A9F7771976C93000316121 /* Frameworks */,
@@ -145,9 +147,9 @@
 			dependencies = (
 				72A9F77C1976C93000316121 /* PBXTargetDependency */,
 			);
-			name = myswft2Tests;
+			name = swftFileReaderTests;
 			productName = myswft2Tests;
-			productReference = 72A9F77A1976C93000316121 /* myswft2Tests.xctest */;
+			productReference = 72A9F77A1976C93000316121 /* swftFileReaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 72A9F7631976C92F00316121 /* Build configuration list for PBXProject "myswft2" */;
+			buildConfigurationList = 72A9F7631976C92F00316121 /* Build configuration list for PBXProject "swftFileReader" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +183,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72A9F7671976C92F00316121 /* myswft2 */,
-				72A9F7791976C93000316121 /* myswft2Tests */,
+				72A9F7671976C92F00316121 /* swftFileReader */,
+				72A9F7791976C93000316121 /* swftFileReaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A9F7811976C93000316121 /* myswft2Tests.swift in Sources */,
+				72A9F7811976C93000316121 /* swftFileReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +232,7 @@
 /* Begin PBXTargetDependency section */
 		72A9F77C1976C93000316121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 72A9F7671976C92F00316121 /* myswft2 */;
+			target = 72A9F7671976C92F00316121 /* swftFileReader */;
 			targetProxy = 72A9F77B1976C93000316121 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -331,7 +333,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = myswft2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = swftFileReader;
 			};
 			name = Debug;
 		};
@@ -342,7 +344,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = myswft2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = swftFileReader;
 			};
 			name = Release;
 		};
@@ -361,7 +363,7 @@
 				);
 				INFOPLIST_FILE = myswft2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = swftFileReaderTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -377,7 +379,7 @@
 				);
 				INFOPLIST_FILE = myswft2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = swftFileReaderTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -385,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		72A9F7631976C92F00316121 /* Build configuration list for PBXProject "myswft2" */ = {
+		72A9F7631976C92F00316121 /* Build configuration list for PBXProject "swftFileReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72A9F7821976C93000316121 /* Debug */,
@@ -394,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72A9F7841976C93000316121 /* Build configuration list for PBXNativeTarget "myswft2" */ = {
+		72A9F7841976C93000316121 /* Build configuration list for PBXNativeTarget "swftFileReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72A9F7851976C93000316121 /* Debug */,
@@ -403,7 +405,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72A9F7871976C93000316121 /* Build configuration list for PBXNativeTarget "myswft2Tests" */ = {
+		72A9F7871976C93000316121 /* Build configuration list for PBXNativeTarget "swftFileReaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72A9F7881976C93000316121 /* Debug */,

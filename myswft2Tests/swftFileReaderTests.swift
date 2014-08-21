@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class myswft2Tests: XCTestCase {
+class swftFileReaderTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

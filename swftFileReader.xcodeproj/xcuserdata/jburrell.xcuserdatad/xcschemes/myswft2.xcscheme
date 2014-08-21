@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "72A9F7671976C92F00316121"
-               BuildableName = "myswft2.app"
-               BlueprintName = "myswft2"
-               ReferencedContainer = "container:myswft2.xcodeproj">
+               BuildableName = "swftFileReader.app"
+               BlueprintName = "swftFileReader"
+               ReferencedContainer = "container:swftFileReader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "72A9F7791976C93000316121"
-               BuildableName = "myswft2Tests.xctest"
-               BlueprintName = "myswft2Tests"
-               ReferencedContainer = "container:myswft2.xcodeproj">
+               BuildableName = "swftFileReaderTests.xctest"
+               BlueprintName = "swftFileReaderTests"
+               ReferencedContainer = "container:swftFileReader.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "72A9F7671976C92F00316121"
-            BuildableName = "myswft2.app"
-            BlueprintName = "myswft2"
-            ReferencedContainer = "container:myswft2.xcodeproj">
+            BuildableName = "swftFileReader.app"
+            BlueprintName = "swftFileReader"
+            ReferencedContainer = "container:swftFileReader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "72A9F7671976C92F00316121"
-            BuildableName = "myswft2.app"
-            BlueprintName = "myswft2"
-            ReferencedContainer = "container:myswft2.xcodeproj">
+            BuildableName = "swftFileReader.app"
+            BlueprintName = "swftFileReader"
+            ReferencedContainer = "container:swftFileReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "72A9F7671976C92F00316121"
-            BuildableName = "myswft2.app"
-            BlueprintName = "myswft2"
-            ReferencedContainer = "container:myswft2.xcodeproj">
+            BuildableName = "swftFileReader.app"
+            BlueprintName = "swftFileReader"
+            ReferencedContainer = "container:swftFileReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
