@@ -11,10 +11,6 @@ import Foundation
 
 class myVC: NSViewController {
 
-    
-//    var fileContents: String = ""
-
-    @IBOutlet var mySButton : NSButton?
     @IBOutlet var mySTextView: NSTextView?
     @IBOutlet weak var fileToReadTextField: NSTextField!
 
