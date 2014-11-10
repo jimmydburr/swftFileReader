@@ -11,7 +11,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="myswft2" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="swftFileReader" customModuleProvider="target">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -675,8 +675,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="520" height="393"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button identifier="myButton" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-In-5bu">
-                        <rect key="frame" x="14" y="345" width="122" height="32"/>
+                    <button identifier="myButton" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-In-5bu">
+                        <rect key="frame" x="14" y="345" width="103" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="110" id="OsH-ag-7nq"/>
                         </constraints>
@@ -716,8 +716,8 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MEf-oj-tZX">
-                        <rect key="frame" x="138" y="351" width="362" height="22"/>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEf-oj-tZX">
+                        <rect key="frame" x="119" y="351" width="381" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Cry-Gl-nIx">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -739,7 +739,7 @@
             </view>
             <point key="canvasLocation" x="41" y="223.5"/>
         </window>
-        <viewController id="BRj-19-5uZ" customClass="myVC" customModule="myswft2" customModuleProvider="target">
+        <viewController id="BRj-19-5uZ" customClass="myVC" customModule="swftFileReader" customModuleProvider="target">
             <connections>
                 <outlet property="fileToReadTextField" destination="MEf-oj-tZX" id="R9I-75-OX2"/>
                 <outlet property="mySTextView" destination="A88-Wo-uaX" id="NoF-q7-ikp"/>

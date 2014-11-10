@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C1853540-8722-4A5B-A927-BB7E9AC6F36A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>swftFileReader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C6A8731CAB5B1FCA815774D60C5F4C60BE01E7C5</key>
+		<string>github.com:jimmydburr/swftFileReader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>swftFileReader.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C6A8731CAB5B1FCA815774D60C5F4C60BE01E7C5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:jimmydburr/swftFileReader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6A8731CAB5B1FCA815774D60C5F4C60BE01E7C5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6A8731CAB5B1FCA815774D60C5F4C60BE01E7C5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>myswft2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
